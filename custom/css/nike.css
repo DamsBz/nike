@@ -1,0 +1,203 @@
+:root {
+    --main-color-1: black;
+    --main-color-2: yellow;
+    --main-color-3: white;
+    --main-color-4: gray;
+
+  }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.headerFlex {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.navigation {
+    flex-basis: 100%;
+    order:3;
+    background-color:var(--main-color-1);
+}
+
+.logo {
+    flex-basis: 100%;
+    padding: .25rem;
+    order:2;
+    background-color:var(--main-color-1);
+}
+.imageSizer {
+    width:100%;
+}
+
+.socials {
+    flex-basis: 100%;
+    order:1;
+    background-color:var(--main-color-2);
+    padding: 8px 0px;
+}
+
+.centerTool {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shoeBlock {
+    width: 100vw;
+    position: relative;
+}
+
+.priceBlock {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    transform: rotate(-10deg);
+    box-shadow: 10px 10px black;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.modelBlock {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    background-color: yellow;
+    color: black;
+    transform: rotate(10deg);
+    box-shadow: 10px 10px black;
+    padding: 15px;
+}
+
+.footerBlock {
+    display: flex;
+    flex-direction:column;
+}
+
+.logoFooter {
+    flex-basis: 100%;
+}
+
+.sloganFooter {
+    flex-basis: 100%;
+}
+.bg-color {
+    background-color: var(--main-color-1);
+}
+.bg-yellow {
+    background-color: var(--main-color-2);
+}
+.bg-black {
+    background-color: var(--main-color-1);
+}
+.bg-icons {
+    background-color: var(--main-color-1);
+}
+.couleur-logo {
+    fill: var(--main-color-2);
+}
+.size-logo {
+    width:200px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.size-icon {
+    width:25px;
+    height:25px;
+}
+.color-icon {
+    color:var(--main-color-1);
+    padding:10px;
+}
+.color-icon:hover {
+    color:var(--main-color-4);
+}
+.no-bullet {
+    list-style-type: none;
+}
+.active {
+    background-color: white !important;
+    color:black !important;
+}
+.soldes {
+    background-color:yellow;
+    text-align: center;
+    padding:20px;
+}
+.noMargin {
+    margin:0;
+}
+.big-picture {
+    border: 20px solid black;
+}
+.shoes-height {
+    height:300px;
+}
+.couleur-logo-black {
+    fill:black;
+}
+.justDoIt {
+    font-size:70px;
+    color:yellow;
+    font-weight: bolder;
+}
+.gray-scale {
+    filter: grayscale(100%);
+    scale: 80%;
+    transition-duration: 0.5s;
+}
+.gray-scale:hover {
+    filter: none;
+    scale: 100%;
+    transition-duration: 0.5s;
+}
+.price {
+    position:absolute;
+    top:50px;
+    left: 50px;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color:yellow;
+    color:black;
+    transform: rotate(-10deg);
+    box-shadow: 10px 10px black;
+}
+.model {
+    position:absolute;
+    top:50px;
+    left: 200px;
+    background-color:yellow;
+    color:black;
+    transform: rotate(10deg);
+    box-shadow: 10px 10px black;
+}
+.price-canceled {
+    text-decoration: line-through;
+}
+.image-home {
+    display:none;
+    background-image: url("../../images/wall.jpg");
+    background-size:cover;
+    background-position: center;
+    height:60vh;
+}
+.selectedLink {
+    background-color:var(--main-color-2);
+    color:var(--main-color-1);
+    border-radius:5px;
+}
